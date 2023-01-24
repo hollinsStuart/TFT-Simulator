@@ -1,0 +1,3 @@
+D:/SJTU/Rolling/TFT-Simulator/cmake-build-debug/CMakeFiles/TFT.dir
+D:/SJTU/Rolling/TFT-Simulator/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/SJTU/Rolling/TFT-Simulator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
