@@ -15,7 +15,8 @@ public:
 private:
     friend Champion;
     std::string Name;
-    bool is
+    bool is;
+
 
 };
 
