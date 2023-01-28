@@ -7,6 +7,8 @@
 
 #include "Champion.h"
 
+enum itemClass {none, direct_damage};
+
 class Item {
 public:
     std::string getName();
@@ -14,7 +16,9 @@ public:
 private:
     friend Champion;
     std::string Name;
-    bool is;
+    bool isUnique;
+    bool isCombined;
+    itemClass iClass;
 
 };
 

@@ -4,6 +4,16 @@
 
 #include "Champion.h"
 
+Champion::Champion() {
+    this->Name = "";
+    this->Cost = 0;
+    this->Health = 0;
+    this->Attack = 0;
+    this->AtkSpeed = 5;
+    this->CritRate = 25;
+    this->abilityName = "";
+}
+
 Champion::Champion(std::string name, int cost, double attack,
                    double health, double atkSpeed, int range,
                    int maxmana, int initialmana, std::string abilityname) {
@@ -13,6 +23,7 @@ Champion::Champion(std::string name, int cost, double attack,
     this->Attack = attack;
     this->AtkSpeed = atkSpeed;
     this->CritRate = 25;
+    this->abilityName = "";
 
 }
 

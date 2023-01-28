@@ -79,6 +79,18 @@ build CMakeFiles/TFT.dir/Item.cpp.obj: CXX_COMPILER__TFT_Debug D$:/SJTU/Rolling/
   OBJECT_DIR = CMakeFiles\TFT.dir
   OBJECT_FILE_DIR = CMakeFiles\TFT.dir
 
+build CMakeFiles/TFT.dir/Player.cpp.obj: CXX_COMPILER__TFT_Debug D$:/SJTU/Rolling/TFT-Simulator/Player.cpp || cmake_object_order_depends_target_TFT
+  DEP_FILE = CMakeFiles\TFT.dir\Player.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\TFT.dir
+  OBJECT_FILE_DIR = CMakeFiles\TFT.dir
+
+build CMakeFiles/TFT.dir/Board.cpp.obj: CXX_COMPILER__TFT_Debug D$:/SJTU/Rolling/TFT-Simulator/Board.cpp || cmake_object_order_depends_target_TFT
+  DEP_FILE = CMakeFiles\TFT.dir\Board.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\TFT.dir
+  OBJECT_FILE_DIR = CMakeFiles\TFT.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target TFT
@@ -87,7 +99,7 @@ build CMakeFiles/TFT.dir/Item.cpp.obj: CXX_COMPILER__TFT_Debug D$:/SJTU/Rolling/
 #############################################
 # Link the executable TFT.exe
 
-build TFT.exe: CXX_EXECUTABLE_LINKER__TFT_Debug CMakeFiles/TFT.dir/main.cpp.obj CMakeFiles/TFT.dir/Champion.cpp.obj CMakeFiles/TFT.dir/Gear.cpp.obj CMakeFiles/TFT.dir/Synergy.cpp.obj CMakeFiles/TFT.dir/Item.cpp.obj
+build TFT.exe: CXX_EXECUTABLE_LINKER__TFT_Debug CMakeFiles/TFT.dir/main.cpp.obj CMakeFiles/TFT.dir/Champion.cpp.obj CMakeFiles/TFT.dir/Gear.cpp.obj CMakeFiles/TFT.dir/Synergy.cpp.obj CMakeFiles/TFT.dir/Item.cpp.obj CMakeFiles/TFT.dir/Player.cpp.obj CMakeFiles/TFT.dir/Board.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\TFT.dir

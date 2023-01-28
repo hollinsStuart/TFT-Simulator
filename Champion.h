@@ -11,6 +11,7 @@
 
 class Champion {
 public:
+    Champion();
     Champion(std::string Name, int Cost, double Attack, double Health,
             double AtkSpeed, int Range, int maxMana,
             int initialMana, std::string abilityName);
