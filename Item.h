@@ -11,9 +11,7 @@ enum itemClass {none, direct_damage};
 
 class Item {
 public:
-    std::string getName();
     virtual void function() = 0;
-private:
     friend Champion;
     std::string Name;
     bool isUnique;

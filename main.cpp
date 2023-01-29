@@ -12,8 +12,19 @@
 #include "Board.h"
 #include "Player.h"
 
+
 void printChampion(Champion C) {
     std::cout << "Name: " << C.getName() << "\nCost: " << C.getCost();
+}
+
+std::vector<Synergy> makeSynergyList() {
+    std::vector<Synergy> temp;
+    std::string string = "Brawler";
+    Synergy s = Synergy(string);
+    temp.push_back(s);
+
+
+    return temp;
 }
 
 int main() {
