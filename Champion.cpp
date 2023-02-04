@@ -42,3 +42,7 @@ double Champion::getAttack() const {
 double Champion::getHealth() const {
     return this->Health;
 }
+
+double Champion::getAtkSpeed() const {
+    return this->AtkSpeed;
+}

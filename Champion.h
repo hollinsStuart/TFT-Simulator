@@ -19,6 +19,13 @@ public:
     [[nodiscard]] int getCost() const;
     [[nodiscard]] double getAttack() const;
     [[nodiscard]] double getHealth() const;
+    [[nodiscard]] double getAtkSpeed() const;
+    [[nodiscard]] int getCritRate() const;
+    [[nodiscard]] int getRange() const;
+    [[nodiscard]] int getMaxmana() const;
+    [[nodiscard]] int getInitmana() const;
+    [[nodiscard]] double getAbilityPower() const;
+
 private:
     friend Gear;
     std::string Name;
@@ -30,6 +37,7 @@ private:
     int Range;
     int maxMana;
     int initialMana;
+    double AbilityPower;
     std::string abilityName;
 };
 
