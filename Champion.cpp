@@ -16,7 +16,7 @@ Champion::Champion() {
 
 Champion::Champion(std::string name, int cost, double attack,
                    double health, double atkSpeed, int range,
-                   int maxmana, int initialmana, std::string abilityname) {
+                   int maxmana, int initialmana, const std::string &abilityname) {
     this->Name = name;
     this->Cost = cost;
     this->Health = health;

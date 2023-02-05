@@ -16,7 +16,7 @@ public:
     Champion();
     Champion(std::string Name, int Cost, double Attack, double Health,
             double AtkSpeed, int Range, int maxMana,
-            int initialMana, std::string abilityName);
+            int initialMana, const std::string &abilityName);
     [[nodiscard]] std::string getName() const;
     [[nodiscard]] int getCost() const;
     [[nodiscard]] double getAttack() const;
