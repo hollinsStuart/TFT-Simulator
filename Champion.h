@@ -6,6 +6,8 @@
 #define TFT_SIMULATOR_CHAMPION_H
 
 #include <string>
+#include <iostream>
+#include <fstream>
 #include "Gear.h"
 #include "Synergy.h"
 
@@ -25,9 +27,13 @@ public:
     [[nodiscard]] int getMaxmana() const;
     [[nodiscard]] int getInitmana() const;
     [[nodiscard]] double getAbilityPower() const;
+    std::ostream &operator<<(std::ostream &os, const Champion &ch);
+
 
 private:
     friend Gear;
+    friend std::ostream;
+
     std::string Name;
     int Cost;
     double Attack;

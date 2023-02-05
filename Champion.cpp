@@ -51,4 +51,9 @@ int Champion::getMaxmana() const {return maxMana;}
 
 int Champion::getInitmana() const {return initialMana;}
 
+std::ostream &Champion::operator<<(std::ostream &os, const Champion &ch) {
+    std::cout << "";
+
+    return os;
+}
 

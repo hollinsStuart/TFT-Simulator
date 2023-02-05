@@ -13,8 +13,11 @@ public:
     Synergy();
     explicit Synergy(std::string &name);
     Synergy(std::string &name, std::vector<int> &nums);
+
     std::string Name;
     std::vector<int> actNum;        // the number of champions to activate the synergy
+
+
 };
 
 

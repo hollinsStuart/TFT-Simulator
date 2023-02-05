@@ -6,6 +6,7 @@
 #define TFT_SIMULATOR_HELPERFUNCTIONS_H
 
 #include <vector>
+#include <iostream>
 #include "Champion.h"
 #include "Gear.h"
 #include "Synergy.h"
@@ -15,7 +16,9 @@
 
 template<class T>
 void printVector(std::vector<T> Vec) {
-
+    for (auto elem : Vec) {
+        std::cout << elem << " ";
+    }
 }
 
 
