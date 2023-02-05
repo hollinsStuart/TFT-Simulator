@@ -39,10 +39,16 @@ double Champion::getAttack() const {
     return this->Attack;
 }
 
-double Champion::getHealth() const {
-    return this->Health;
-}
+double Champion::getHealth() const {return this->Health;}
 
-double Champion::getAtkSpeed() const {
-    return this->AtkSpeed;
-}
+double Champion::getAtkSpeed() const {return this->AtkSpeed;}
+
+int Champion::getCritRate() const {return this->CritRate;}
+
+int Champion::getRange() const {return Range;}
+
+int Champion::getMaxmana() const {return maxMana;}
+
+int Champion::getInitmana() const {return initialMana;}
+
+

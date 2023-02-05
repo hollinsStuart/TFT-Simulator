@@ -10,7 +10,11 @@
 class Player {
 public:
     Board board;
+    int Health;
 
+
+    Player();
+    Player(int iHealth);
 };
 
 

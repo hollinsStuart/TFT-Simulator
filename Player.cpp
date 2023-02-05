@@ -3,3 +3,11 @@
 //
 
 #include "Player.h"
+
+Player::Player() {
+    Health = 100;
+}
+
+Player::Player(int iHealth) {
+    Health = iHealth;
+}
