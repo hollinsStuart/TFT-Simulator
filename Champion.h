@@ -31,7 +31,7 @@ public:
 
 
 private:
-    friend Gear;
+    friend class Gear;
     friend std::ostream;
 
     std::string Name;

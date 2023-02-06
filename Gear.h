@@ -13,7 +13,7 @@ public:
     std::string getName();
 
 private:
-    friend Champion;
+    friend class Champion;
     std::string Name;
     bool is;
 
