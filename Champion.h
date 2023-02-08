@@ -11,12 +11,14 @@
 #include "Gear.h"
 #include "Synergy.h"
 
+using std::ostream, std::vector, std::string;
+
 class Champion {
 public:
     Champion();
-    Champion(std::string Name, int Cost, double Attack, double Health,
+    Champion(string Name, int Cost, double Attack, double Health,
             double AtkSpeed, int Range, int maxMana,
-            int initialMana, const std::string &abilityName);
+            int initialMana, const string &abilityName);
     [[nodiscard]] std::string getName() const;
     [[nodiscard]] int getCost() const;
     [[nodiscard]] double getAttack() const;
@@ -27,14 +29,14 @@ public:
     [[nodiscard]] int getMaxmana() const;
     [[nodiscard]] int getInitmana() const;
     [[nodiscard]] double getAbilityPower() const;
-    std::ostream &operator<<(std::ostream &os, const Champion &ch);
+    ostream &operator<<(ostream &os, const Champion &ch);
 
 
 private:
     friend class Gear;
-    friend std::ostream;
+    friend ostream;
 
-    std::string Name;
+    string Name;
     int Cost;
     double Attack;
     double Health;
@@ -44,7 +46,7 @@ private:
     int maxMana;
     int initialMana;
     double AbilityPower;
-    std::string abilityName;
+    string abilityName;
 };
 
 

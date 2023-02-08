@@ -11,15 +11,17 @@
 #include "Item.h"
 #include "Board.h"
 #include "Player.h"
+#include "HelperFunctions.h"
 
+using std::cout, std::vector, std::string, std::fstream;
 
 void printChampion(Champion C) {
-    std::cout << "Name: " << C.getName() << "\nCost: " << C.getCost();
+    cout << "Name: " << C.getName() << "\nCost: " << C.getCost();
 }
 
-std::vector<Synergy> makeSynergyList() {
-    std::vector<Synergy> temp;
-    std::string string = "Brawler";
+vector<Synergy> makeSynergyList() {
+    vector<Synergy> temp;
+    string string = "Brawler";
     Synergy s = Synergy(string);
     temp.push_back(s);
 
@@ -28,16 +30,16 @@ std::vector<Synergy> makeSynergyList() {
 }
 
 int main() {
-    std::fstream Champion_f, Synergy_f, Item_f;
-    std::string ChampFile = "Champion.txt", SynergyFile = "Synergy.txt";
-    std::vector<Champion> ChampionList;
+    fstream Champion_f, Synergy_f, Item_f;
+    string ChampFile = "Champion.txt", SynergyFile = "Synergy.txt";
+    vector<Champion> ChampionList;
 
     int ChampNum;
     Champion_f.open(ChampFile);
     Champion_f >> ChampNum;
     ChampionList.reserve(ChampNum);
     for (int i = 0; i < ChampNum; ++i) {
-        std::string tName, tAName;
+        string tName, tAName;
         int tCost, tCircR, iMana, mMana, tRange;
         double tAtt, tHea, tAtkS;
         Champion_f >> tName >> tCost >> tAtt >> tAtkS >> tRange >> mMana >> iMana >> tAName;
@@ -48,13 +50,13 @@ int main() {
     }
     Champion_f.close();
 
-    std::vector<Item> ItemList;
+    vector<Item> ItemList;
 
 
-    std::vector<Synergy> SynergyList;
+    vector<Synergy> SynergyList;
 
 
 
-    std::cout << "0" << std::endl;
+    cout << "0\n";
     return 0;
 }

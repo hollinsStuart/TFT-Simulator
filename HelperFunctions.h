@@ -14,10 +14,12 @@
 #include "Board.h"
 #include "Player.h"
 
+using std::vector, std::cout;
+
 template<class T>
-void printVector(std::vector<T> Vec) {
+void printVector(vector<T> Vec) {
     for (auto elem : Vec) {
-        std::cout << elem << " ";
+        cout << elem << " ";
     }
 }
 

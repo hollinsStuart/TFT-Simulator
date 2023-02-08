@@ -9,6 +9,7 @@
 
 class Board {
 public:
+    /* Plate points to contents in champion list */
     Champion* Plate[7][4];
 
     /* initialize the board to be all null pointers */

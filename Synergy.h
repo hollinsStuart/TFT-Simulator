@@ -8,14 +8,16 @@
 #include <string>
 #include <vector>
 
+using std::vector, std::string;
+
 class Synergy {
 public:
     Synergy();
-    explicit Synergy(std::string &name);
-    Synergy(std::string &name, std::vector<int> &nums);
+    explicit Synergy(string &name);
+    Synergy(string &name, vector<int> &nums);
 
-    std::string Name;
-    std::vector<int> actNum;        // the number of champions to activate the synergy
+    string Name;
+    vector<int> actNum;        // the number of champions to activate the synergy
 
 
 };
