@@ -7,4 +7,4 @@ This is a simulator of the game TFT by Riot Games.
 5
 Vayne 
 ```
-- The first line 
+- The first line

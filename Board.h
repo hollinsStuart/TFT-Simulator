@@ -6,11 +6,13 @@
 #define TFT_SIMULATOR_BOARD_H
 
 #include "Champion.h"
+#include "Item.h"
+#include "Unit.h"
 
 class Board {
 public:
     /* Plate points to contents in champion list */
-    Champion* Plate[7][4];
+    Unit Plate[7][4];
 
     /* initialize the board to be all null pointers */
     Board();
