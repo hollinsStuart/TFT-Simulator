@@ -6,6 +6,7 @@
 #define TFT_SIMULATOR_UNIT_H
 
 #include <vector>
+#include <string>
 #include "Champion.h"
 #include "Item.h"
 
