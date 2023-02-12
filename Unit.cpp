@@ -7,6 +7,10 @@
 Unit::Unit() {
     Champ = nullptr;
     Items.assign({nullptr, nullptr, nullptr});
+    Level = 0;
+}
+
+Unit::~Unit() {
 
 }
 
@@ -14,3 +18,5 @@ Unit::Unit() {
 void Unit::Swap(Unit &target) {
 
 }
+
+

@@ -14,13 +14,26 @@
 #include "Board.h"
 #include "Player.h"
 
-using std::vector, std::cout;
+using std::vector, std::cout, std::string;
+
+class ChampionNotFound : private std::exception {
+public:
+    ChampionNotFound(){};
+};
 
 template<class T>
 void printVector(vector<T> Vec) {
     for (auto elem : Vec) {
         cout << elem << " ";
     }
+}
+
+Champion* findChampion(const string &name, const vector<Champion> &C) {
+    for (auto temp : C) {
+        if (temp.getName() == name) return &temp;
+    }
+    throw ChampionNotFound();
+    return nullptr;
 }
 
 

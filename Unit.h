@@ -15,8 +15,10 @@ using std::vector, std::string;
 class Unit {
     Champion* Champ;
     vector<Item*> Items;
+    int Level;
 
     Unit();
+    ~Unit();    // Only called when selling
     void Swap(Unit &target);
 };
 
