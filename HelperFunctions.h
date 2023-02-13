@@ -18,7 +18,7 @@ using std::vector, std::cout, std::string;
 
 class ChampionNotFound : private std::exception {
 public:
-    ChampionNotFound(){};
+    ChampionNotFound()= default;;
 };
 
 template<class T>

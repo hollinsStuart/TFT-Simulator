@@ -10,6 +10,14 @@ Unit::Unit() {
     Level = 0;
 }
 
+Unit::Unit(Champion &Champ) {
+
+}
+
+void Unit::addItem(Item& item) {
+
+}
+
 Unit::~Unit() {
 
 }

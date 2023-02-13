@@ -13,11 +13,14 @@
 using std::vector, std::string;
 
 class Unit {
+public:
     Champion* Champ;
     vector<Item*> Items;
     int Level;
 
     Unit();
+    Unit(Champion& Champ);
+    void addItem(Item& item);
     ~Unit();    // Only called when selling
     void Swap(Unit &target);
 };
