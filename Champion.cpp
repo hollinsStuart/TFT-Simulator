@@ -27,17 +27,11 @@ Champion::Champion(string name, int cost, double attack,
 
 }
 
-string Champion::getName() const {
-    return this->Name;
-}
+string Champion::getName() const {return this->Name;}
 
-int Champion::getCost() const {
-    return this->Cost;
-}
+int Champion::getCost() const {return this->Cost;}
 
-double Champion::getAttack() const {
-    return this->Attack;
-}
+double Champion::getAttack() const {return this->Attack;}
 
 double Champion::getHealth() const {return this->Health;}
 
@@ -54,7 +48,7 @@ int Champion::getInitmana() const {return initialMana;}
 double Champion::getAbilityPower() const {return AbilityPower;}
 
 ostream &Champion::operator<<(ostream &os, const Champion &ch) {
-    std::cout << "";
+    std::cout << "Champion: " << this->Name;
 
     return os;
 }

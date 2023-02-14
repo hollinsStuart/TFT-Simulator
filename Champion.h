@@ -8,9 +8,7 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include "Gear.h"
-#include "Item.h"
-#include "Synergy.h"
+#include "HelperFunctions.h"
 
 using std::ostream, std::vector, std::string;
 

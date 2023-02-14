@@ -5,8 +5,8 @@
 #ifndef TFT_SIMULATOR_GEAR_H
 #define TFT_SIMULATOR_GEAR_H
 
-#include "Champion.h"
 #include <string>
+#include "HelperFunctions.h"
 
 class Gear {
 public:

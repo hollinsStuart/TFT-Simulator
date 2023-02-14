@@ -5,7 +5,7 @@
 #ifndef TFT_SIMULATOR_ITEM_H
 #define TFT_SIMULATOR_ITEM_H
 
-#include "Champion.h"
+#include "HelperFunctions.h"
 
 enum itemClass {none, direct_damage};
 

@@ -13,6 +13,8 @@
 #include "Item.h"
 #include "Board.h"
 #include "Player.h"
+#include "Game.h"
+#include "Unit.h"
 
 using std::vector, std::cout, std::string;
 

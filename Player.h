@@ -5,7 +5,7 @@
 #ifndef TFT_SIMULATOR_PLAYER_H
 #define TFT_SIMULATOR_PLAYER_H
 
-#include "Board.h"
+#include "HelperFunctions.h"
 
 class Player {
 public:

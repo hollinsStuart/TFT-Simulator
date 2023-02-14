@@ -7,8 +7,6 @@
 
 #include <vector>
 #include <string>
-#include "Champion.h"
-#include "Item.h"
 #include "HelperFunctions.h"
 
 using std::vector, std::string;

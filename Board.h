@@ -5,9 +5,7 @@
 #ifndef TFT_SIMULATOR_BOARD_H
 #define TFT_SIMULATOR_BOARD_H
 
-#include "Champion.h"
-#include "Item.h"
-#include "Unit.h"
+#include "HelperFunctions.h"
 
 class Board {
 public:
