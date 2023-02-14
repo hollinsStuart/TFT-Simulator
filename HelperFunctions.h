@@ -18,7 +18,12 @@ using std::vector, std::cout, std::string;
 
 class ChampionNotFound : private std::exception {
 public:
-    ChampionNotFound()= default;;
+    ChampionNotFound()= default;
+};
+
+class ItemNumberExceed : private std::exception {
+public:
+    ItemNumberExceed()= default;
 };
 
 template<class T>

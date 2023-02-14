@@ -37,7 +37,7 @@ public:
 private:
     friend class Gear;
     friend class Item;
-    friend ostream;
+    friend ostream& operator<<(ostream&, const Champion&);
 
     string Name;
     int Cost;

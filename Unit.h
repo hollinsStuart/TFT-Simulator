@@ -9,6 +9,7 @@
 #include <string>
 #include "Champion.h"
 #include "Item.h"
+#include "HelperFunctions.h"
 
 using std::vector, std::string;
 
@@ -17,11 +18,12 @@ public:
     Champion* Champ;
     vector<Item*> Items;
     int Level;
+    int itemNum;
 
     Unit();
     Unit(Champion& Champ);
-    void addItem(Item& item);
     ~Unit();    // Only called when selling
+    void addItem(Item& item);
     void Swap(Unit &target);
 };
 
