@@ -3,3 +3,7 @@
 //
 
 #include "Gear.h"
+
+string Gear::getName() const {
+    return Name;
+}

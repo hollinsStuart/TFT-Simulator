@@ -9,11 +9,12 @@
 
 class Board {
 public:
-    /* Plate points to contents in champion list */
-    Unit Plate[7][4];
+    /* Plate points to contents in unit list */
+    Unit* Plate[7][4]{};
 
     /* initialize the board to be all null pointers */
     Board();
+    ~Board() = default;
 
 
 

@@ -5,17 +5,11 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "Champion.h"
-#include "Gear.h"
-#include "Synergy.h"
-#include "Item.h"
-#include "Board.h"
-#include "Player.h"
 #include "HelperFunctions.h"
 
 using std::cout, std::vector, std::string, std::fstream;
 
-void printChampion(Champion C) {
+void printChampion(const Champion& C) {
     cout << "Name: " << C.getName() << "\nCost: " << C.getCost();
 }
 
@@ -30,8 +24,9 @@ vector<Synergy> makeSynergyList() {
 }
 
 int main() {
-    fstream Champion_f, Synergy_f, Item_f;
+    fstream Champion_f, Item_f;
     string ChampFile = "Champion.txt", SynergyFile = "Synergy.txt";
+    vector<Synergy> SynergyList = makeSynergyList();
     vector<Champion> ChampionList;
 
     int ChampNum;
@@ -53,7 +48,7 @@ int main() {
     vector<Item> ItemList;
 
 
-    vector<Synergy> SynergyList;
+
 
 
 

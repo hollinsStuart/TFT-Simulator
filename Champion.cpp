@@ -47,8 +47,9 @@ int Champion::getInitmana() const {return initialMana;}
 
 double Champion::getAbilityPower() const {return AbilityPower;}
 
-ostream &Champion::operator<<(ostream &os, const Champion &ch) {
-    std::cout << "Champion: " << this->Name;
+ostream &operator<<(ostream &os, const Champion &ch) {
+    cout << "Champion: " << ch.Name << "\n"
+        << "Cost  " << ch.Cost;
 
     return os;
 }

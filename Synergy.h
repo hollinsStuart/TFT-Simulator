@@ -5,8 +5,6 @@
 #ifndef TFT_SIMULATOR_SYNERGY_H
 #define TFT_SIMULATOR_SYNERGY_H
 
-#include <string>
-#include <vector>
 #include "HelperFunctions.h"
 
 using std::vector, std::string;

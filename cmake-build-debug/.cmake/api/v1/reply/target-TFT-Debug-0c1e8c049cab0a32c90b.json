@@ -120,7 +120,8 @@
 				10,
 				12,
 				14,
-				16
+				16,
+				17
 			]
 		}
 	],
@@ -219,6 +220,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Unit.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Exceptions.h",
 			"sourceGroupIndex" : 1
 		}
 	],

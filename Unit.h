@@ -5,24 +5,25 @@
 #ifndef TFT_SIMULATOR_UNIT_H
 #define TFT_SIMULATOR_UNIT_H
 
-#include <vector>
-#include <string>
 #include "HelperFunctions.h"
 
 using std::vector, std::string;
 
 class Unit {
 public:
-    Champion* Champ;
+    Champion* Champ{};
     vector<Item*> Items;
-    int Level;
-    int itemNum;
+    vector<Synergy*> additionalSynergies;
+    int Level{};
+    int itemNum{};
 
     Unit();
-    Unit(Champion& Champ);
-    ~Unit();    // Only called when selling
-    void addItem(Item& item);
+    explicit Unit(Champion *Champ);
+    ~Unit();
+    void addItem(Item* item);
     void Swap(Unit &target);
+    void assignChamp(Champion *ch);
+
 };
 
 

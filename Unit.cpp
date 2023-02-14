@@ -6,30 +6,35 @@
 
 Unit::Unit() {
     Champ = nullptr;
-    Items.assign({nullptr, nullptr, nullptr});
-    Level = 0;
-    itemNum = 0;
+    Items.reserve(6);
 }
 
-Unit::Unit(Champion &Champ) {
+Unit::Unit(Champion *Champ) {
 
 }
 
-void Unit::addItem(Item& item) {
-    if (this->itemNum == 3) {
+void Unit::addItem(Item* item) {
+    if (this->itemNum == 6) {
         throw ItemNumberExceed();
+    } else if (this->itemNum / 2) {
+        // synthesize items
+        Items.push_back(item);
     } else {
-
+        // just add
+        Items.push_back(item);
     }
 }
 
-Unit::~Unit() {
-
-}
+Unit::~Unit() = default;
 
 /* Swap contents in the units */
 void Unit::Swap(Unit &target) {
 
+}
+
+/* Call when a new champion is bought */
+void Unit::assignChamp(Champion *ch) {
+    this->Champ = ch;
 }
 
 

@@ -5,12 +5,13 @@
 #ifndef TFT_SIMULATOR_GEAR_H
 #define TFT_SIMULATOR_GEAR_H
 
-#include <string>
 #include "HelperFunctions.h"
+
+using std::string, std::vector;
 
 class Gear {
 public:
-    std::string getName();
+    [[nodiscard]] string getName() const;
 
 private:
     friend class Champion;

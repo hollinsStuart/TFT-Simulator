@@ -7,13 +7,16 @@
 
 #include "HelperFunctions.h"
 
+using std::string;
+
 enum itemClass {none, direct_damage};
 
 class Item {
 public:
     virtual void function() = 0;
-    friend Champion;
-    std::string Name;
+    virtual ~Item() = 0;
+    friend class Champion;
+    string Name;
     bool isUnique;
     bool isCombined;
     itemClass iClass;

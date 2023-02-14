@@ -11,9 +11,12 @@ class Player {
 public:
     Board board;
     int Health;
+    int Level;
+    int MaxUnitNum;
 
     Player();
-    Player(int iHealth);
+    explicit Player(int iHealth);
+    ~Player() = default;
 };
 
 

@@ -13,14 +13,14 @@ Vayne
 ## Example
 
 |       5        |                      |
-|:--------------:| :------------------: |
+|:--------------:|:--------------------:|
 |     Vayne      |         Name         |
 |       3        |         Cost         |
 |       67       |        Attack        |
 |      700       |        Health        |
 |      0.8       |     Attack Speed     |
 |       4        |        Range         |
-|       40       |   Max Manacyrstals   |
-|       0        | Initial Manacyrstals |
+|       40       |   Max Manacrystals   |
+|       0        | Initial Manacrystals |
 | #Silver Arrow# |     Ability Name     |
 

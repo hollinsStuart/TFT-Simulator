@@ -5,9 +5,6 @@
 #ifndef TFT_SIMULATOR_CHAMPION_H
 #define TFT_SIMULATOR_CHAMPION_H
 
-#include <string>
-#include <iostream>
-#include <fstream>
 #include "HelperFunctions.h"
 
 using std::ostream, std::vector, std::string;
@@ -18,6 +15,7 @@ public:
     Champion(string Name, int Cost, double Attack, double Health,
             double AtkSpeed, int Range, int maxMana,
             int initialMana, const string &abilityName);
+    ~Champion() = default;
     [[nodiscard]] string getName() const;
     [[nodiscard]] int getCost() const;
     [[nodiscard]] double getAttack() const;
@@ -28,12 +26,9 @@ public:
     [[nodiscard]] int getMaxmana() const;
     [[nodiscard]] int getInitmana() const;
     [[nodiscard]] double getAbilityPower() const;
-    ostream& operator<<(ostream &os, const Champion &ch);
-
-
 
 private:
-    friend class Gear;
+//    friend class Gear;
     friend class Item;
     friend ostream& operator<<(ostream&, const Champion&);
 
@@ -48,9 +43,11 @@ private:
     int initialMana;
     double AbilityPower;
     string abilityName;
-    vector<Item*> Items;
+    vector<Synergy*> Synergies;
 
 };
+
+ostream& operator<<(ostream &os, const Champion &ch);
 
 
 #endif //TFT_SIMULATOR_CHAMPION_H
