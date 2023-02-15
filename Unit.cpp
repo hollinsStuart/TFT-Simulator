@@ -13,6 +13,7 @@ Unit::Unit(Champion *Champ) {
 
 }
 
+/* catch ItemNumberExceed after this function */
 void Unit::addItem(Item* item) {
     if (this->itemNum == 6) {
         throw ItemNumberExceed();

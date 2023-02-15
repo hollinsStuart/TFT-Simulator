@@ -29,6 +29,7 @@ void printVector(vector<T> Vec) {
     }
 } const
 
+/* catch ChampionNotFound after calling the function */
 Champion* findChampion(const string &name, const vector<Champion> *C) {
     for (const auto& temp : *C) {
         if (temp.getName() == name) return &temp;
