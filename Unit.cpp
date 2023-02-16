@@ -37,6 +37,7 @@ void Unit::swap(Unit &target) {
 
 /* Call when a new champion is bought */
 void Unit::assignChamp(Champion *ch) {
+    // deal with sellable
     this->Champ = ch;
 }
 
@@ -44,7 +45,21 @@ void Unit::assignChamp(Champion *ch) {
 void Unit::sellUnit() {
     if (this->sellable) {
         // sell and return the items
+        switch (this->Level) {
+            case 0:
 
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            default:
+
+        }
         this->clear();
     } else {
         throw CannotSellUnit();
