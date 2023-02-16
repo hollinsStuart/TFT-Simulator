@@ -21,4 +21,10 @@ public:
     ~ItemNumberExceed() override = default;
 };
 
+class CannotSellUnit : private exception {
+public:
+    CannotSellUnit()= default;
+    ~CannotSellUnit() override = default;
+};
+
 #endif //TFT_SIMULATOR_EXCEPTIONS_H

@@ -16,13 +16,16 @@ public:
     vector<Synergy*> additionalSynergies;
     int Level{};
     int itemNum{};
+    bool sellable;
 
     Unit();
     explicit Unit(Champion *Champ);
     ~Unit();
     void addItem(Item* item);
-    void Swap(Unit &target);
+    void swap(Unit &target);
     void assignChamp(Champion *ch);
+    void sellUnit();
+    void clear();
 
 };
 

@@ -9,7 +9,7 @@
 
 using std::string;
 
-enum itemClass {none, direct_damage};
+enum itemClass {none, direct_damage, emblem};
 
 class Item {
 public:
@@ -18,7 +18,7 @@ public:
     friend class Champion;
     string Name;
     bool isUnique;
-    bool isCombined;
+    int slotRequired;
     itemClass iClass;
 
 };
