@@ -16,18 +16,26 @@ public:
     vector<Synergy*> additionalSynergies;
     int Level{};
     int itemNum{};
-    bool sellable;
+    bool sellable{};
 
     Unit();
-    explicit Unit(Champion *Champ);
+    explicit Unit(Champion *Champ, bool sell = false, int iNum = 0);
+    Unit(const Unit& u);
     ~Unit();
     void addItem(Item* item);
     void swap(Unit &target);
     void assignChamp(Champion *ch);
     void sellUnit();
+
+private:
     void clear();
 
 };
+
+/* swap u1 and u2 */
+void swap(Unit &u1, Unit &u2) {
+
+}
 
 
 #endif //TFT_SIMULATOR_UNIT_H

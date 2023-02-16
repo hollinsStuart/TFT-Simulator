@@ -7,10 +7,23 @@
 Unit::Unit() {
     Champ = nullptr;
     Items.reserve(6);
+    sellable = false;
 }
 
-Unit::Unit(Champion *Champ) {
+Unit::Unit(Champion *Champ, bool sell, int iNum) {
+    Champ = nullptr;
+    Items.reserve(6);
+    sellable = sell;
+    itemNum = iNum;
+}
 
+Unit::Unit(const Unit &u) {
+    this->Champ = u.Champ;
+    this->Items = u.Items;
+    this->additionalSynergies = u.additionalSynergies;
+    this->Level = u.Level;
+    this->itemNum = u.itemNum;
+    this->sellable = u.sellable;
 }
 
 /* catch ItemNumberExceed then after this function */
@@ -37,7 +50,7 @@ void Unit::swap(Unit &target) {
 
 /* Call when a new champion is bought */
 void Unit::assignChamp(Champion *ch) {
-    // deal with sellable
+    // TODO: deal with sellable
     this->Champ = ch;
 }
 
