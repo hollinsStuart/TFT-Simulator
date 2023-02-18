@@ -49,7 +49,7 @@ double Champion::getAbilityPower() const {return AbilityPower;}
 
 ostream &operator<<(ostream &os, const Champion &ch) {
     cout << "Champion: " << ch.Name << "\n"
-        << "Cost  " << ch.Cost;
+        << "Cost  " << ch.Cost << "Health: " << ch.Health;
 
     return os;
 }
