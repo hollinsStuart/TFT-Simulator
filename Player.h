@@ -8,15 +8,19 @@
 #include "HelperFunctions.h"
 
 class Player {
+private:
+    int EXP;
 public:
     Board board;
     int Health;
-    int Level;
+    int MaxLevel;
     int MaxUnitNum;
 
     Player();
-    explicit Player(int iHealth);
+    explicit Player(int, int);
     ~Player() = default;
+    [[nodiscard]] int getLevel() const;
+    void addEXP(int);
 };
 
 

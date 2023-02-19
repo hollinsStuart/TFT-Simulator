@@ -8,11 +8,11 @@ Synergy::Synergy() {
     Name = "";
 }
 
-Synergy::Synergy(std::string &name) {
+Synergy::Synergy(string &name) {
     Name = name;
 }
 
-Synergy::Synergy(std::string &name, std::vector<int> &nums) {
+Synergy::Synergy(string &name, vector<int> &nums) {
     Name = name;
     actNum = nums;
 }

@@ -11,13 +11,13 @@ using std::vector, std::string;
 
 class Synergy {
 public:
-    Synergy();
-    explicit Synergy(string &name);
-    Synergy(string &name, vector<int> &nums);
-
     string Name;
     vector<int> actNum;        // the number of champions to activate the synergy
 
+
+    Synergy();
+    explicit Synergy(string&);
+    Synergy(string&, vector<int> &nums);
 
 };
 
