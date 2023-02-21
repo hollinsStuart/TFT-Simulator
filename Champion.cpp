@@ -27,8 +27,6 @@ Champion::Champion(string name, int cost, double attack,
 
 }
 
-string Champion::getName() const {return this->Name;}
-
 int Champion::getCost() const {return this->Cost;}
 
 double Champion::getAttack() const {return this->Attack;}

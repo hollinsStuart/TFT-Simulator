@@ -16,7 +16,7 @@ public:
             double AtkSpeed, int Range, int maxMana,
             int initialMana, const string &abilityName);
     ~Champion() = default;
-    [[nodiscard]] string getName() const;
+    [[nodiscard]] virtual string getName() = 0;
     [[nodiscard]] int getCost() const;
     [[nodiscard]] double getAttack() const;
     [[nodiscard]] double getHealth() const;

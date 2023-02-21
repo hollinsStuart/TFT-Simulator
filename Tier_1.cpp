@@ -3,3 +3,7 @@
 //
 
 #include "Tier_1.h"
+
+string Renekton::getName() {return "Renekton";}
+
+

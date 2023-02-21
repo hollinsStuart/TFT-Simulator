@@ -22,6 +22,7 @@ public:
 };
 
 class Brawler: public Synergy {
+
     string Name = "Brawler";
 
 
