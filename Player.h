@@ -21,6 +21,7 @@ public:
     ~Player() = default;
     [[nodiscard]] int getLevel() const;
     void addEXP(int);
+    void changeHP(int);
 };
 
 

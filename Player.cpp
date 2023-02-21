@@ -25,3 +25,7 @@ int Player::getLevel() const {
 void Player::addEXP(int num = 2) {
     EXP += num;
 }
+
+void Player::changeHP(int num) {
+    Health += num;
+}

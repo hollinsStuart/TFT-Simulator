@@ -21,5 +21,11 @@ public:
 
 };
 
+class Brawler: public Synergy {
+    string Name = "Brawler";
+
+
+};
+
 
 #endif //TFT_SIMULATOR_SYNERGY_H
