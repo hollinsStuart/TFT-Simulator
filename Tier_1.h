@@ -13,6 +13,16 @@ public:
 private:
     const string Name = "Renekton";
     const int Cost = 1;
+    const double Attack;
+    const double Health;
+    const double AtkSpeed;
+    const int CritRate;
+    int Range = 1;
+    const int maxMana;
+    const int initialMana;
+    const double AbilityPower;
+    const string abilityName = "Dominus";
+    const vector<Synergy*> Synergies = {};
 };
 
 

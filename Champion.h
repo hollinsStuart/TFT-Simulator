@@ -42,6 +42,8 @@ private:
     int maxMana;
     int initialMana;
     double AbilityPower;
+    int Armor;
+    int MagicResistance;
     string abilityName;
     vector<Synergy*> Synergies;
 
