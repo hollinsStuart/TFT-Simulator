@@ -56,24 +56,26 @@ void Unit::assignChamp(Champion *ch) {
 
 /* catch cannotSellUnit after this */
 void Unit::sellUnit(Player& player) {
+    int change = 0;
     if (this->sellable) {
         // sell and return the items
         switch (this->Level) {
-            case 0:
-
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
             case 4:
                 break;
+            case 1:
+                change = this->Champ->getCost();
+                break;
+            case 2:
+                change = this->Champ->getCost() * 3 - 1;
+                break;
+            case 3:
+                change = this->Champ->getCost() * 9 - 3;
+                break;
             default:
-
+                change = this->Level * 3 - 1;
         }
         this->clear();
+        player.changeGold(change);
     } else {
         throw cannotSellUnit();
     }
