@@ -26,10 +26,10 @@ Unit::Unit(const Unit &u) {
     this->sellable = u.sellable;
 }
 
-/* catch ItemNumberExceed then after this function */
+/* catch itemNumberExceed then after this function */
 void Unit::addItem(Item* item) {
     if (this->itemNum + item->slotRequired > 6) {
-        throw ItemNumberExceed();
+        throw itemNumberExceed();
     } else if (this->itemNum==5 ) {
 
     } else if (this->itemNum / 2) {
@@ -54,8 +54,8 @@ void Unit::assignChamp(Champion *ch) {
     this->Champ = ch;
 }
 
-/* catch CannotSellUnit after this */
-void Unit::sellUnit() {
+/* catch cannotSellUnit after this */
+void Unit::sellUnit(Player& player) {
     if (this->sellable) {
         // sell and return the items
         switch (this->Level) {
@@ -75,7 +75,7 @@ void Unit::sellUnit() {
         }
         this->clear();
     } else {
-        throw CannotSellUnit();
+        throw cannotSellUnit();
     }
 }
 

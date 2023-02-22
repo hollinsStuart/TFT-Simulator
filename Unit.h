@@ -25,7 +25,7 @@ public:
     void addItem(Item* item);
     void swap(Unit &target);
     void assignChamp(Champion *ch);
-    void sellUnit();
+    void sellUnit(Player&);
 
 private:
     void clear();

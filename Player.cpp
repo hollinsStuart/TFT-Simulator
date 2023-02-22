@@ -29,3 +29,8 @@ void Player::addEXP(int num = 2) {
 void Player::changeHP(int num) {
     Health += num;
 }
+
+/* catch notEnoughGold after this */
+void Player::changeGold(int gold) {
+
+}

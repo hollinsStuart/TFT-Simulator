@@ -9,22 +9,28 @@
 
 using std::string, std::exception;
 
-class ChampionNotFound : private exception {
+class championNotFound : private exception {
 public:
-    ChampionNotFound()= default;
-    ~ChampionNotFound() override = default;
+    championNotFound()= default;
+    ~championNotFound() override = default;
 };
 
-class ItemNumberExceed : private exception {
+class itemNumberExceed : private exception {
 public:
-    ItemNumberExceed()= default;
-    ~ItemNumberExceed() override = default;
+    itemNumberExceed()= default;
+    ~itemNumberExceed() override = default;
 };
 
-class CannotSellUnit : private exception {
+class cannotSellUnit : private exception {
 public:
-    CannotSellUnit()= default;
-    ~CannotSellUnit() override = default;
+    cannotSellUnit()= default;
+    ~cannotSellUnit() override = default;
+};
+
+class notEnoughGold : private exception {
+public:
+    notEnoughGold()= default;
+    ~notEnoughGold() override = default;
 };
 
 #endif //TFT_SIMULATOR_EXCEPTIONS_H

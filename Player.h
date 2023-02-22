@@ -10,11 +10,14 @@
 class Player {
 private:
     int EXP;
+    int Health;
+    int Gold;
 public:
     Board board;
-    int Health;
+
     int MaxLevel;
     int MaxUnitNum;
+
 
     Player();
     explicit Player(int, int);
@@ -22,6 +25,7 @@ public:
     [[nodiscard]] int getLevel() const;
     void addEXP(int);
     void changeHP(int);
+    void changeGold(int);
 };
 
 
