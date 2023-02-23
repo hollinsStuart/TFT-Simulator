@@ -10,6 +10,7 @@
 #include <fstream>
 #include <cmath>
 #include <string>
+#include <thread>
 #include "Champion.h"
 #include "Gear.h"
 #include "Synergy.h"
