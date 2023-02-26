@@ -21,7 +21,7 @@
 #include "Unit.h"
 #include "Exceptions.h"
 
-using std::vector, std::cout, std::string, std::exception;
+using std::vector, std::cout, std::string, std::exception, std::thread;
 
 template<class T>
 void printVector(vector<T> Vec) {
@@ -32,9 +32,9 @@ void printVector(vector<T> Vec) {
 
 /* catch championNotFound after calling the function */
 Champion* findChampion(const string &name, const vector<Champion> *C) {
-    for (const auto& temp : *C) {
-        if (temp.getName() == name) return &temp;
-    }
+//    for (const auto& temp : *C) {
+//        if (temp.getName() == name) return &temp;
+//    }
     throw championNotFound();
 }
 
