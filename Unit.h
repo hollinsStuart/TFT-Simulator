@@ -33,9 +33,8 @@ private:
 };
 
 /* swap u1 and u2 */
-void swap(Unit &u1, Unit &u2) {
+void swap(Unit &u1, Unit &u2);
 
-}
 
 
 #endif //TFT_SIMULATOR_UNIT_H
